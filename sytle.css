@@ -515,6 +515,87 @@ footer .copyright{
  width: 100%;
  text-align: center;   
 }
+/* Shop page */
+#page-header{
+    background-image: url(img/banner/b1.jpg);
+    width: 100;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 14px;
+    text-align: center;
+}
+#page-header h2,
+#page-header p{
+    color: #fff;
+}
+#pagination{
+    text-align: center;
+
+}
+#pagination a{
+    text-decoration: none;
+    background-color: #F7941D;
+    padding: 15px 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+#pagination a i{
+    font-size: 16px;
+    font-weight: 600;
+}
+#prodetails .single-pro-image{
+    width: 30%;
+    margin-right: 50px;
+}
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+
+}
+/* product page */
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+#prodetails .single-pro-details{
+    width: 50%;
+    padding: 30px;
+}
+#prodetails .single-pro-details h4{
+    padding: 40px 0 20px 0;
+}
+#prodetails .single-pro-details h2{
+    font-size: 35px;
+}
+#prodetails .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+#prodetails .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    font-size: 16px;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+#prodetails .single-pro-details button{
+    background-color: #088178;
+}
+#prodetails .single-pro-details input:focus{
+    outline: none;
+}
+#prodetails .single-pro-details span{
+    line-height: 25px;
+}
+
 /* Media Query */
 @media (max-width:800px){
     .section-p1{
@@ -649,4 +730,18 @@ footer .copyright{
     footer .copyright{
         text-align: start;
     }
+    /* single product */
+    #prodetails{
+        display: flex;
+        flex-direction: column;
+    }
+    #prodetails .single-pro-image{
+        width: 100%;
+        margin-right: 0px;
+    }
+    #prodetails .single-pro-details{
+        width: 100%;
+        
+    }
+
 }
